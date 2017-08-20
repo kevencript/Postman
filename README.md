@@ -5,4 +5,4 @@
     - Validar a requisição dos serviços 
     - Validar body, header e cookies 
     - Não é possível validar performance (Load testing) no Postman 
-    - Linguagem de progrmação utilizada é (javascript) 
+    - Linguagem de progrmação utilizada: javascript  
