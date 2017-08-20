@@ -17,3 +17,6 @@
 	- dotTEST
 	- Eclipse SDK tool- Automated API testing
 
+## Newman 
+
+https://www.npmjs.com/package/newman
