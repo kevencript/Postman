@@ -6,3 +6,14 @@
     - Validar body, header e cookies 
     - Não é possível validar performance (Load testing) no Postman 
     - Linguagem de progrmação utilizada: javascript  
+
+## Outras Ferramentas: 
+    - SOAPUI
+	- Runscope
+	- Curl
+	- Cfix
+	- Check
+	- CTESK
+	- dotTEST
+	- Eclipse SDK tool- Automated API testing
+
