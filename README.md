@@ -37,6 +37,7 @@
 https://www.npmjs.com/package/newman
 https://www.getpostman.com/docs/postman/collection_runs/command_line_integration_with_newman
 
+
 ## Instalação: 
 
 	npm install -g newman
