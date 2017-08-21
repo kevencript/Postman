@@ -3,9 +3,9 @@
 
 ## Características: 
   	- Validar a requisição dos serviços 
-	- Validar body, header e cookies 
+	- Validar body, header e cookies
 	- Não é possível validar performance (Load testing) no Postman 
-    	- Linguagem de progrmação utilizada: javascript  
+	- Linguagem de progrmação utilizada: javascript  
     	- Ferramenta gratuita
    	- Não é necessário instalar EXE - é uma extensão do Google Chrome
    	- Funciona em qualquer plataforma: Windows, MacOS e Linux
