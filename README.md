@@ -44,30 +44,29 @@ https://www.getpostman.com/docs/postman/collection_runs/command_line_integration
 
 ## Comand Basic: 
 
-Options:
+	Options:
 
-Utility:
--h, --help                      output usage information
--v, --version                   output the version number
+	Utility:
+	-h, --help                      output usage information
+	-v, --version                   output the version number
 
-Basic setup:
---folder [folderName]           Specify a single folder to run from a collection.
--e, --environment [file|URL]    Specify a Postman environment as a JSON [file]
--d, --data [file]               Specify a data file to use either json or csv
--g, --global [file]             Specify a Postman globals file as JSON [file]
--n, --iteration-count [number]  Define the number of iterations to run
+	Basic setup:
+	--folder [folderName]           Specify a single folder to run from a collection.
+	-e, --environment [file|URL]    Specify a Postman environment as a JSON [file]
+	-d, --data [file]               Specify a data file to use either json or csv
+	-g, --global [file]             Specify a Postman globals file as JSON [file]
+	-n, --iteration-count [number]  Define the number of iterations to run
 
-Request options:
---delay-request [number]        Specify a delay (in ms) between requests [number]
---timeout-request [number]      Specify a request timeout (in ms) for a request
-
-Misc.:
---bail                          Stops the runner when a test case fails
---silent                        Disable terminal output
---no-color                      Disable colored output
--k, --insecure                  Disable strict ssl
--x, --suppress-exit-code        Continue running tests even after a failure, but exit with code=0
---ignore-redirects              Disable automatic following of 3XX responses
+	Request options:
+	--delay-request [number]        Specify a delay (in ms) between requests [number]
+	--timeout-request [number]      Specify a request timeout (in ms) for a request
+	Misc.:
+	--bail                          Stops the runner when a test case fails
+	--silent                        Disable terminal output
+	--no-color                      Disable colored output
+	-k, --insecure                  Disable strict ssl
+	-x, --suppress-exit-code        Continue running tests even after a failure, but exit with code=0
+	--ignore-redirects              Disable automatic following of 3XX responses
 
 
 ## Rodar os Testes via Newman 
