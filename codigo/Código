@@ -1,0 +1,91 @@
+
+1. Estrutura em Json: 
+
+tests["Exibir todas as redes cadastradas"] = responseCode.code === 200;
+
+tests["O tempo de resposta deve ser  menor que 100 ms"] = responseTime < 100;
+
+tests["Successful POST request"] = responseCode.code === 201 || responseCode.code === 202;
+
+
+
+2. Response: 
+
+
+- ResponseCode.code 
+
+- responseTime
+
+- responseBody
+
+
+3. If/Else  
+
+
+if(responseCode.code == 200)
+
+    tests["Exibir todas as redes cadastradas"] = true;
+    
+else 
+    tests["erro"];
+
+
+
+
+var responseJSON;
+
+try { 
+    responseJSON = JSON.parse(responseBody); 
+    tests['response is valid JSON'] = true;
+}
+catch (e) { 
+    responseJSON = {}; 
+    tests['response is valid JSON'] = false;
+}
+
+
+
+var schema = {
+ "items": {
+ "type": "boolean"
+ }
+};
+
+var data1 = [true, false];
+var data2 = [true, 123];
+tests["Valid Data1"] = tv4.validate(data1, schema);
+tests["Valid Data2"] = tv4.validate(data2, schema);
+console.log("Validation failed: ", tv4.error);
+
+
+
+4. Manage global variables 
+
+postman.setGlobalVariable("variable_key", "variable_value");
+
+Exemplo: 
+
+// Pegar o valor da variável e jogar para "Variável Global"
+var jsonData = JSON.parse(responseBody);
+postman.setGlobalVariable("idPedido", jsonData.data.id);
+
+
+postman.setEnvironmentVariable("variable_key", "variable_value");
+
+postman.clearGlobalVariable("variable_key");
+
+postman.clearEnvironmentVariable("variable_key");
+
+postman.getResponseHeader("Content-Type");
+
+postman.setNextRequest("Mudar o status do pedido para (2- Preparando)");
+
+console.log("Username that: " + data.Username); 
+
+
+
+
+
+
+
+
