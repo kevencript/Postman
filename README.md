@@ -25,9 +25,8 @@
 
 ## Newman 
 
-https://www.npmjs.com/package/newman
-https://www.getpostman.com/docs/postman/collection_runs/command_line_integration_with_newman
-
+	Objetivo:
+	É um comando de linha utilizado para rodar as collection do Postman. A partir deste comando é possível inserir iterações,gerar relatórios em html, json etc.. 
 
 ## Instalação: 
 
@@ -66,3 +65,8 @@ https://www.getpostman.com/docs/postman/collection_runs/command_line_integration
 	
 	newman run https://www.getpostman.com/collections/b4edd0d5uouuuyy3540be6e95ff?_ga=2.228191262.2023271780.1503278717-2133731189.1500040125 -g globals.postman_globals.json -n 2 --bail -r html
 
+
+## Links 
+
+	https://www.npmjs.com/package/newman
+	https://www.getpostman.com/docs/postman/collection_runs/command_line_integration_with_newman
