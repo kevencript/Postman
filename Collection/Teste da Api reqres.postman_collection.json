@@ -1,0 +1,44 @@
+{
+	"id": "a27462bc-12ae-0091-3f67-5f02917b9ed8",
+	"name": "Teste da Api reqres",
+	"description": "",
+	"order": [
+		"1ee6624d-c0df-8599-ee1e-8e42cb344b99"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1503506961242,
+	"owner": "2096031",
+	"public": false,
+	"requests": [
+		{
+			"id": "1ee6624d-c0df-8599-ee1e-8e42cb344b99",
+			"headers": "",
+			"headerData": [],
+			"url": "https://reqres.in/api/users?page=2 ",
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "2 ",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "// Validar o status \n\ntests[\"Exibir o status 200\"] = responseCode.code == 200; \n\n//Validar o tempo da requisição \n\ntests[\"Response time is less than 200ms\"] = responseTime < 4300;\n\n//Validar a estrutrura do json \n\nvar estruturaJson; \n\nestruturaJson = JSON.parse(responseBody); \ntests[\"Estrutura do json validada com sucesso\"] = true; \n\n// Validar os dados do Json: \n\ntests[\"Validação do dado page realizado com sucesso\"];\n\nestruturaJson.page=\"2\"; \n\n\n\n\n\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1503508914605,
+			"name": "Exibir usuários ",
+			"description": "",
+			"collectionId": "a27462bc-12ae-0091-3f67-5f02917b9ed8",
+			"responses": []
+		}
+	]
+}
